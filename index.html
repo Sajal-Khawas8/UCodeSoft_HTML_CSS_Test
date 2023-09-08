@@ -9,11 +9,706 @@
     <meta name="author" content="Sajal">
     <link rel="icon" href="./images/AppLogo.webp" type="image/x-icon">
     <link rel="stylesheet" href="./css/output.css">
-    <title>Admin Panel</title>
+    <title>E-Commerce</title>
 </head>
 
-<body>
-    
+<body class="font-jost text-gray-500">
+    <!-- <header>
+        <nav class="flex justify-center items-center">
+            <ol class="flex justify-between items-center gap-20">
+                <li class="relative flex items-center justify-center flex-col">
+                    <div class="font-semibold  text-primaryBlue">Summary</div>
+                    <div
+                        class="w-8 h-8 rounded-full border-2 border-primaryBlue flex items-center justify-center relative">
+                        <span class="h-2 w-2 rounded-full bg-primaryBlue"></span>
+                    </div>
+                    <div class="border border-primaryBlue absolute left-10 top-11 w-44"></div>
+                    <a href="#" class="inset-0" aria-label="Summary"></a>
+                </li>
+                <li class="relative flex items-center justify-center flex-col">
+                    <div class="font-semibold  text-primaryBlue">Contact Information</div>
+                    <div
+                        class="w-8 h-8 rounded-full border-2 border-primaryBlue flex items-center justify-center relative">
+                        <span class="h-2 w-2 rounded-full bg-primaryBlue"></span>
+                    </div>
+                    <div class="border border-dotted border-gray-400 absolute left-10 top-11 w-44"></div>
+                    <a href="#" class="inset-0" aria-label="Summary"></a>
+                </li>
+                <li class="relative flex items-center justify-center flex-col">
+                    <div class="font-semibold  text-primaryBlue">Payment Information</div>
+                    <div
+                        class="w-8 h-8 rounded-full border-2 border-primaryBlue flex items-center justify-center relative">
+                        <span class="h-2 w-2 rounded-full bg-primaryBlue"></span>
+                    </div>
+                    <div class="border border-dotted border-gray-400 absolute left-10 top-11 w-44"></div>
+                    <a href="#" class="inset-0" aria-label="Summary"></a>
+                </li>
+            </ol>
+        </nav>
+    </header> -->
+
+    <div class="container mx-auto">
+        <main class="space-y-8">
+            <form action="#" class="px-6 md:px-16 lg:px-28 xl:px-40 space-y-5">
+                <section class="space-y-6 p-4 border border-gray-400 rounded-md">
+                    <div class="flex flex-col xl:flex-row items-center gap-5">
+                        <div class="">
+                            <img src="./images/image 32.png" alt="Ring" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 space-y-4">
+                            <header class="space-y-1">
+                                <div class="flex justify-between gap-3">
+                                    <h2 class="text-lg">Oval French Cut Halo Engagement Set In 14K White Gold With A
+                                        1.00
+                                        Ct.
+                                        H-Color
+                                        VS2-Clarity
+                                        Emerald Cut Diamond</h2>
+                                    <button type="button" class="flex items-center h-fit gap-2">
+                                        <svg class="w-5 h-5 text-gray-600" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                            <path
+                                                d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
+                                            </path>
+                                        </svg>
+                                        <span class="text-gray-500 ">Remove</span>
+                                    </button>
+                                </div>
+                                <p class="text-gray-500">Item #: RB1077-WG14</p>
+                                <div class="text-2xl font-bold text-black">$1,258.78</div>
+                            </header>
+                            <div class="space-y-4">
+                                <div class="flex flex-col sm:flex-row items-center gap-5">
+                                    <div class="text-gray-500 space-y-2">
+                                        <label for="size">Ring size</label>
+                                        <select name="size" id="size"
+                                            class="w-full border border-gray-200 rounded p-4 text-gray-500">
+                                            <option value="0">Select size</option>
+                                            <option value="lg">LG</option>
+                                            <option value="xl">XL</option>
+                                            <option value="2xl">2XL</option>
+                                            <option value="3xl">3XL</option>
+                                        </select>
+                                    </div>
+                                    <div class="text-gray-500 space-y-2">
+                                        <label for="quantity">Quantity</label>
+                                        <div class="w-full max-w-[104px] relative border border-gray-200 rounded">
+                                            <input type="number" name="quantity" id="quantity" class="w-full py-3 px-8">
+                                            <button type="button" class="absolute left-1 top-1/2 -translate-y-1/2">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="absolute right-1 top-1/2 -translate-y-1/2">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="text-gray-500 space-y-2">
+                                        <p class="text-base">Would you like to add a center stone?</p>
+                                        <div class="flex items-center gap-4">
+                                            <div>
+                                                <input type="radio" name="stone" id="yes" checked
+                                                    class="w-4 h-4 accent-primaryBlue">
+                                                <label for="yes">Yes</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="stone" id="no"
+                                                    class="w-4 h-4 accent-primaryBlue">
+                                                <label for="no">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <p class="flex items-center gap-2 font-medium text-gray-600">Select Protection Plans
+                                        <svg class="w-5 h-5 text-primaryBlue" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 1024 1024" fill="currentColor">
+                                            <path
+                                                d="M576 736l-32-.001v-286c0-.336-.096-.656-.096-1.008s.096-.655.096-.991c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32s14.336 32 32 32h32v256h-32c-17.664 0-32 14.336-32 32s14.336 32 32 32h128c17.664 0 32-14.336 32-32s-14.336-32-32-32zm-64-384.001c35.344 0 64-28.656 64-64s-28.656-64-64-64-64 28.656-64 64 28.656 64 64 64zm0-352c-282.768 0-512 229.232-512 512 0 282.784 229.232 512 512 512 282.784 0 512-229.216 512-512 0-282.768-229.216-512-512-512zm0 961.008c-247.024 0-448-201.984-448-449.01 0-247.024 200.976-448 448-448s448 200.977 448 448-200.976 449.01-448 449.01z">
+                                            </path>
+                                        </svg>
+                                    </p>
+                                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Blanditiis, recusandae?</p>
+                                    <div
+                                        class="flex flex-col sm:flex-row items-center gap-0 max-w-fit border border-gray-200 divide-x divide-gray-200">
+                                        <input type="radio" name="plan" id="noPlan" checked class="hidden peer/noPlan">
+                                        <label for="noPlan"
+                                            class="w-44 p-4 flex items-center justify-center gap-2 cursor-pointer text-gray-500 peer-checked/noPlan:text-white peer-checked/noPlan:bg-primaryBlue">
+                                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                fill="currentColor">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                            <span>No Plan</span>
+                                        </label>
+                                        <input type="radio" name="plan" id="3Y" class="hidden peer/3Y">
+                                        <label for="3Y"
+                                            class="w-52 p-4 flex items-center justify-center gap-2 cursor-pointer text-gray-500 peer-checked/3Y:text-white peer-checked/3Y:bg-primaryBlue">
+                                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                fill="currentColor">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                            <span>3 Years</span>
+                                            <span>$180.00</span>
+                                        </label>
+                                        <input type="radio" name="plan" id="lifetime" class="hidden peer/lifetime">
+                                        <label for="lifetime"
+                                            class="w-52 p-4 group flex items-center justify-center gap-2 cursor-pointer text-gray-500 peer-checked/lifetime:text-white peer-checked/lifetime:bg-primaryBlue">
+                                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                fill="currentColor">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                            <span>Lifetime</span>
+                                            <span>$425.00</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col sm:flex-row items-center gap-2">
+                                    <p>Want to add engraving?</p>
+                                    <button type="button" class="flex items-center gap-2 text-primaryBlue">
+                                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                        Add Engraving <span class="font-medium">$30.00</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <article>
+                                <h4>Matching Items</h4>
+                                <div class="relative">
+                                    <button type="button"
+                                        class="w-10 h-10 rounded-full bg-gray-800 absolute left-0 top-1/2 -translate-y-1/2 flex items-center justify-center">
+                                        <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <button type="button"
+                                        class="w-10 h-10 rounded-full bg-gray-800 absolute right-0 top-1/2 -translate-y-1/2 flex items-center justify-center">
+                                        <svg class="w-8 h-8 text-white rotate-180" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <div class="flex items-center justify-between gap-4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl overflow-auto">
+                                        <div class="shrink-0 h-20 w-20">
+                                            <img src="./images/pendent.webp" alt="items"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="shrink-0 h-20 w-20">
+                                            <img src="./images/pendent.webp" alt="items"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="shrink-0 h-20 w-20">
+                                            <img src="./images/pendent.webp" alt="items"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="shrink-0 h-20 w-20">
+                                            <img src="./images/pendent.webp" alt="items"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="shrink-0 h-20 w-20">
+                                            <img src="./images/pendent.webp" alt="items"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="shrink-0 h-20 w-20">
+                                            <img src="./images/pendent.webp" alt="items"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="shrink-0 h-20 w-20">
+                                            <img src="./images/pendent.webp" alt="items"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="shrink-0 h-20 w-20">
+                                            <img src="./images/pendent.webp" alt="items"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <article class="flex items-center gap-2 p-3 border border-gray-200 rounded-md">
+                            <div class="w-20 h-20">
+                                <img src="./images/pendent.webp" alt="appraisal" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-gray-700 flex justify-between items-center">Complimentary Appraisal
+                                    <span class="text-black font-medium">$00.00</span>
+                                </h4>
+                                <p class="text-gray-500">Item #: RB1077-WG14</p>
+                            </div>
+                        </article>
+                        <article class="flex items-center gap-2 p-3 border border-gray-200 rounded-md">
+                            <div class="w-20 h-20">
+                                <img src="./images/pendent.webp" alt="appraisal" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-gray-700 flex justify-between items-center">Complimentary Appraisal
+                                    <span class="text-black font-medium">$00.00</span>
+                                </h4>
+                                <p class="text-gray-500">Item #: RB1077-WG14</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="space-y-6 p-4 border border-gray-400 rounded-md">
+                    <div class="flex flex-col md:flex-row items-center gap-5">
+                        <div class="">
+                            <img src="./images/image 32.png" alt="Ring" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 space-y-4">
+                            <header class="space-y-1">
+                                <div class="flex justify-between gap-3">
+                                    <h2 class="text-lg">Oval French Cut Halo Engagement Set In 14K White Gold With A
+                                        1.00
+                                        Ct.
+                                        H-Color
+                                        VS2-Clarity
+                                        Emerald Cut Diamond</h2>
+                                    <button type="button" class="flex items-center h-fit gap-2">
+                                        <svg class="w-5 h-5 text-gray-600" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                            <path
+                                                d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
+                                            </path>
+                                        </svg>
+                                        <span class="text-gray-500 ">Remove</span>
+                                    </button>
+                                </div>
+                                <p class="text-gray-300">Item #: RB1077-WG14</p>
+                                <div class="text-4xl font-bold">$1,258.78</div>
+                            </header>
+                            <div class="space-y-4">
+                                <div class="flex flex-col md:flex-row items-center gap-5">
+                                    <div class="text-gray-500 space-y-2">
+                                        <label for="size">Ring size</label>
+                                        <select name="size" id="size"
+                                            class="w-full border border-gray-200 rounded p-4 text-gray-500">
+                                            <option value="0">Select size</option>
+                                            <option value="lg">LG</option>
+                                            <option value="xl">XL</option>
+                                            <option value="2xl">2XL</option>
+                                            <option value="3xl">3XL</option>
+                                        </select>
+                                    </div>
+                                    <div class="text-gray-500 space-y-2">
+                                        <label for="quantity">Quantity</label>
+                                        <div class="w-full max-w-[104px] relative border border-gray-200 rounded">
+                                            <input type="number" name="quantity" id="quantity" class="w-full py-3 px-8">
+                                            <button type="button" class="absolute left-1 top-1/2 -translate-y-1/2">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="absolute right-1 top-1/2 -translate-y-1/2">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="text-gray-500 space-y-2">
+                                        <p class="text-base">Would you like to add a center stone?</p>
+                                        <div class="flex items-center gap-4">
+                                            <div>
+                                                <input type="radio" name="stone" id="yes" checked
+                                                    class="w-4 h-4 accent-primaryBlue">
+                                                <label for="yes">Yes</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="stone" id="no"
+                                                    class="w-4 h-4 accent-primaryBlue">
+                                                <label for="no">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <p class="flex items-center gap-2 font-medium text-gray-600">Select Protection Plans
+                                        <svg class="w-5 h-5 text-primaryBlue" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 1024 1024" fill="currentColor">
+                                            <path
+                                                d="M576 736l-32-.001v-286c0-.336-.096-.656-.096-1.008s.096-.655.096-.991c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32s14.336 32 32 32h32v256h-32c-17.664 0-32 14.336-32 32s14.336 32 32 32h128c17.664 0 32-14.336 32-32s-14.336-32-32-32zm-64-384.001c35.344 0 64-28.656 64-64s-28.656-64-64-64-64 28.656-64 64 28.656 64 64 64zm0-352c-282.768 0-512 229.232-512 512 0 282.784 229.232 512 512 512 282.784 0 512-229.216 512-512 0-282.768-229.216-512-512-512zm0 961.008c-247.024 0-448-201.984-448-449.01 0-247.024 200.976-448 448-448s448 200.977 448 448-200.976 449.01-448 449.01z">
+                                            </path>
+                                        </svg>
+                                    </p>
+                                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Blanditiis, recusandae?</p>
+                                    <div
+                                        class="flex flex-col md:flex-row items-center gap-0 max-w-fit border border-gray-200 divide-x divide-gray-200">
+                                        <input type="radio" name="plan" id="noPlan" checked class="hidden peer/noPlan">
+                                        <label for="noPlan"
+                                            class="w-44 p-4 flex items-center justify-center gap-2 cursor-pointer text-gray-500 peer-checked/noPlan:text-white peer-checked/noPlan:bg-primaryBlue">
+                                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                fill="currentColor">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                            <span>No Plan</span>
+                                        </label>
+                                        <input type="radio" name="plan" id="3Y" class="hidden peer/3Y">
+                                        <label for="3Y"
+                                            class="w-52 p-4 flex items-center justify-center gap-2 cursor-pointer text-gray-500 peer-checked/3Y:text-white peer-checked/3Y:bg-primaryBlue">
+                                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                fill="currentColor">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                            <span>3 Years</span>
+                                            <span>$180.00</span>
+                                        </label>
+                                        <input type="radio" name="plan" id="lifetime" class="hidden peer/lifetime">
+                                        <label for="lifetime"
+                                            class="w-52 p-4 group flex items-center justify-center gap-2 cursor-pointer text-gray-500 peer-checked/lifetime:text-white peer-checked/lifetime:bg-primaryBlue">
+                                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                fill="currentColor">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                            <span>Lifetime</span>
+                                            <span>$425.00</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col md:flex-row items-center gap-2">
+                                    <p>Want to add engraving?</p>
+                                    <button type="button" class="flex items-center gap-2 text-primaryBlue">
+                                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                        Add Engraving <span class="font-medium">$30.00</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <article>
+                                <h4>Matching Items</h4>
+                                <div class="flex items-center justify-between gap-4 w-full relative overflow-auto">
+                                    <button type="button"
+                                        class="w-10 h-10 rounded-full bg-gray-800 absolute left-0 top-1/2 -translate-y-1/2 flex items-center justify-center">
+                                        <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <button type="button"
+                                        class="w-10 h-10 rounded-full bg-gray-800 absolute right-0 top-1/2 -translate-y-1/2 flex items-center justify-center">
+                                        <svg class="w-8 h-8 text-white rotate-180" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <div class="shrink-0 h-20 w-20">
+                                        <img src="./images/pendent.webp" alt="items" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="shrink-0 h-20 w-20">
+                                        <img src="./images/pendent.webp" alt="items" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="shrink-0 h-20 w-20">
+                                        <img src="./images/pendent.webp" alt="items" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="shrink-0 h-20 w-20">
+                                        <img src="./images/pendent.webp" alt="items" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="shrink-0 h-20 w-20">
+                                        <img src="./images/pendent.webp" alt="items" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="shrink-0 h-20 w-20">
+                                        <img src="./images/pendent.webp" alt="items" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <article class="flex items-center gap-2 p-3 border border-gray-200 rounded-md">
+                            <div class="w-20 h-20">
+                                <img src="./images/pendent.webp" alt="appraisal" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-gray-700 flex justify-between items-center">Complimentary Appraisal
+                                    <span class="text-black font-medium">$00.00</span>
+                                </h4>
+                                <p class="text-gray-500">Item #: RB1077-WG14</p>
+                            </div>
+                        </article>
+                        <article class="flex items-center gap-2 p-3 border border-gray-200 rounded-md">
+                            <div class="w-20 h-20">
+                                <img src="./images/pendent.webp" alt="appraisal" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-gray-700 flex justify-between items-center">Complimentary Appraisal
+                                    <span class="text-black font-medium">$00.00</span>
+                                </h4>
+                                <p class="text-gray-500">Item #: RB1077-WG14</p>
+                            </div>
+                        </article>
+                        <article class="flex items-center gap-2 p-3 border border-gray-200 rounded-md relative">
+                            <div class="w-20 h-20">
+                                <img src="./images/pendent.webp" alt="appraisal" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-gray-700 flex justify-between items-center">Complimentary Appraisal
+                                    <span class="text-black font-medium">$00.00</span>
+                                </h4>
+                                <p class="text-gray-500">Item #: RB1077-WG14</p>
+                            </div>
+                            <button class="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2">
+                                <svg class="w-4 h-4 text-gray-600" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </article>
+                    </div>
+                </section>
+                <section class="grid grid-cols-1 md:grid-cols-2 gap-12 p-4 border border-gray-400 rounded-md">
+                    <div class="space-y-6">
+                        <div class="space-y-2">
+                            <h2 class="font-semibold text-lg">Special Instructions</h2>
+                            <div class="border border-gray-200 rounded-md px-4 py-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem libero dolorem, similique
+                                minima,
+                                perspiciatis cumque porro velit nobis asperiores laborum reiciendis labore pariatur ut
+                                iure
+                                enim
+                                quasi magni non dolore.
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="font-semibold text-lg">Shipping</h2>
+                            <dl class="flex justify-between items-center">
+                                <div>
+                                    <dt>Estimated shipping date</dt>
+                                    <dd class="text-gray-600 font-medium"><time datetime="2033-08-11">Friday, August 11,
+                                            2023</time></dd>
+                                </div>
+                                <div>
+                                    <dt>Shipping method</dt>
+                                    <dd class="text-gray-600 font-medium">Free FedEx Overnigh</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div
+                            class="border border-gray-200 bg-gray-50  space-y-4 rounded-md px-4 py-2 text-sm text-gray-500">
+                            <p>For sunday delivery, call customer service at <a href="tel:+654654154154"
+                                    class="text-black text-base font-medium">654654154154</a>
+                                APO/FPO orders will ship via USPS priority mail</p>
+                            <div class="flex items-center justify-between">
+                                <p>View our <a href="#" class="text-primaryBlue font-medium underline">Shipping Policy
+                                        and
+                                        Expedite Options</a> </p>
+                                <p>For phone orders please mention: QDHJIV45DR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <dl class="text-gray-500 divide-y divide-gray-200">
+                                <div class="flex items-center justify-between py-4">
+                                    <dt>Subtotal</dt>
+                                    <dd class="text-black text-lg font-medium">$5.364.75</dd>
+                                </div>
+                                <div class="flex items-center justify-between py-4">
+                                    <dt>Shipping</dt>
+                                    <dd class="text-black text-lg font-medium">Free</dd>
+                                </div>
+                                <div class="flex items-center justify-between py-4">
+                                    <dt>Total payable</dt>
+                                    <dd class="text-black text-lg font-medium">$5.364.75</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="couponCode" class="text-gray-500">Coupon Code</label>
+                                <div class="relative">
+                                    <input type="text" name="couponCode" id="couponCode" placeholder="Enter Code"
+                                        class="w-full border border-gray-200 text-gray-500 text-lg rounded-md px-4 py-3 pr-14">
+                                    <button type="button"
+                                        class="absolute top-1/2 -translate-y-1/2 right-2 text-lg text-primaryBlue font-medium">Apply</button>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="w-full px-6 py-4 bg-primaryBlue text-white text-xl font-semibold rounded-md">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
+            <section class="flex flex-col items-center justify-center gap-8">
+                <h3 class="font-semibold text-lg">Payment choices with flexibility</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                    <figure class="flex flex-col items-center justify-center gap-4 text-gray-500">
+                        <img src="./images/image 40.png" alt="credit card" class="w-20 h-20">
+                        <figcaption>Debit or Credit card</figcaption>
+                    </figure>
+                    <figure class="flex flex-col items-center justify-center gap-4 text-gray-500">
+                        <img src="./images/image 39.png" alt="paypal" class="w-20 h-20">
+                        <figcaption>PayPal</figcaption>
+                    </figure>
+                    <figure class="flex flex-col items-center justify-center gap-4 text-gray-500">
+                        <img src="./images/image 43.png" alt="split pay" class="w-20 h-20">
+                        <figcaption>Split Pay</figcaption>
+                    </figure>
+                    <figure class="flex flex-col items-center justify-center gap-4 text-gray-500">
+                        <img src="./images/image 41.png" alt="affirm" class="w-20 h-20">
+                        <figure>Financing with Affirm</figure>
+                    </figure>
+                    <figure class="flex flex-col items-center justify-center gap-4 text-gray-500">
+                        <img src="./images/image 42.png" alt="wire" class="w-20 h-20">
+                        <figcaption>Wire Transfer</figcaption>
+                    </figure>
+                    <figure class="flex flex-col items-center justify-center gap-4 text-gray-500">
+                        <img src="./images/image 45.png" alt="phone" class="w-20 h-20">
+                        <figcaption>Pay by Phone</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="px-56 py-16 space-y-8">
+                <header>
+                    <h3 class="font-semibold text-lg">Keep your Jewellery sparkling and safe</h3>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestias
+                        veniam quos</p>
+                </header>
+                <div class="flex items-center justify-between">
+                    <a href="#" class="bg-primaryBlue px-4 py-2 text-white font-semibold text-lg">Purchase a care
+                        plan</a>
+                    <a href="#" class="text-primaryBlue underline font-mediums">Explore All</a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+                    <article class="flex flex-col items-center justify-center gap-2 text-gray-500">
+                        <div class="w-20 h-20">
+                            <img src="./images/pendent.webp" alt="product" class="w-full h-full object-cover">
+                        </div>
+                        <h4>Foaming Cleaner</h4>
+                        <p class="text-black font-medium">$12.00</p>
+                        <footer>
+                            <button type="button"
+                                class="border border-primaryBlue text-primaryBlue font-medium rounded px-3 py-1">Add To
+                                Cart</button>
+                        </footer>
+                    </article>
+                    <article class="flex flex-col items-center justify-center gap-2 text-gray-500">
+                        <div class="w-20 h-20">
+                            <img src="./images/pendent.webp" alt="product" class="w-full h-full object-cover">
+                        </div>
+                        <h4>Foaming Cleaner</h4>
+                        <p class="text-black font-medium">$12.00</p>
+                        <footer>
+                            <button type="button"
+                                class="border border-primaryBlue text-primaryBlue font-medium rounded px-3 py-1">Add To
+                                Cart</button>
+                        </footer>
+                    </article>
+                    <article class="flex flex-col items-center justify-center gap-2 text-gray-500">
+                        <div class="w-20 h-20">
+                            <img src="./images/pendent.webp" alt="product" class="w-full h-full object-cover">
+                        </div>
+                        <h4>Foaming Cleaner</h4>
+                        <p class="text-black font-medium">$12.00</p>
+                        <footer>
+                            <button type="button"
+                                class="border border-primaryBlue text-primaryBlue font-medium rounded px-3 py-1">Add To
+                                Cart</button>
+                        </footer>
+                    </article>
+                    <article class="flex flex-col items-center justify-center gap-2 text-gray-500">
+                        <div class="w-20 h-20">
+                            <img src="./images/pendent.webp" alt="product" class="w-full h-full object-cover">
+                        </div>
+                        <h4>Foaming Cleaner</h4>
+                        <p class="text-black font-medium">$12.00</p>
+                        <footer>
+                            <button type="button"
+                                class="border border-primaryBlue text-primaryBlue font-medium rounded px-3 py-1">Add To
+                                Cart</button>
+                        </footer>
+                    </article>
+                    <article class="flex flex-col items-center justify-center gap-2 text-gray-500">
+                        <div class="w-20 h-20">
+                            <img src="./images/pendent.webp" alt="product" class="w-full h-full object-cover">
+                        </div>
+                        <h4>Foaming Cleaner</h4>
+                        <p class="text-black font-medium">$12.00</p>
+                        <footer>
+                            <button type="button"
+                                class="border border-primaryBlue text-primaryBlue font-medium rounded px-3 py-1">Add To
+                                Cart</button>
+                        </footer>
+                    </article>
+                    <article class="flex flex-col items-center justify-center gap-2 text-gray-500">
+                        <div class="w-20 h-20">
+                            <img src="./images/pendent.webp" alt="product" class="w-full h-full object-cover">
+                        </div>
+                        <h4>Foaming Cleaner</h4>
+                        <p class="text-black font-medium">$12.00</p>
+                        <footer>
+                            <button type="button"
+                                class="border border-primaryBlue text-primaryBlue font-medium rounded px-3 py-1">Add To
+                                Cart</button>
+                        </footer>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
 </body>
 
 </html>
