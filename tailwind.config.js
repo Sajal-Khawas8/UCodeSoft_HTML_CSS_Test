@@ -4,9 +4,9 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
-      // screens:{
-      //   '2xl': '1436px'
-      // },
+      screens:{
+        '2xl': '1436px'
+      },
       colors:{
         'primaryBlue': '#6497ce'
       },
