@@ -79,8 +79,8 @@
 
     <!-- main part -->
     <main class="space-y-12 py-8">
+        <!-- main form -->
         <div>
-            <!-- main form -->
             <form action="#" class="px-6 space-y-12">
                 <!-- products -->
                 <ul class="space-y-12">
@@ -90,13 +90,14 @@
                             <!-- main product -->
                             <div class="flex flex-col lg:flex-row gap-8">
                                 <!-- product image -->
-                                <div class="flex-none mx-auto h-full lg:max-w-[50%] xl:max-w-lg">
+                                <div class="flex-none mx-auto lg:max-w-lg">
                                     <img src="./images/image%2032.png" alt="Ring"
                                         class="w-full h-full object-cover lg:object-contain xl:object-cover rounded-md">
                                 </div>
 
                                 <!-- product details -->
-                                <div class="flex-1 space-y-4 overflow-x-hidden">
+                                <div
+                                    class="flex-1 space-y-4 lg:max-h-[520px] lg:overflow-y-auto xl:max-h-none overflow-x-hidden">
                                     <!-- product name, price and id -->
                                     <header class="space-y-1">
                                         <!-- product name -->
@@ -131,19 +132,19 @@
                                             </div>
                                         </dl>
                                         <!-- product price -->
-                                        <div class="text-2xl font-bold text-black">$1,258.78</div>
+                                        <strong class="text-2xl font-semibold text-black">$1,258.78</strong>
                                     </header>
 
                                     <!-- product details -->
                                     <div class="space-y-4">
                                         <!-- Size, Quantity and Stone -->
-                                        <div class="flex flex-wrap gap-x-10 gap-y-3">
+                                        <div class="flex flex-wrap gap-x-12 gap-y-3">
                                             <!-- Ring size -->
-                                            <div class=" space-y-2">
+                                            <div class="w-60 pl-px space-y-2">
                                                 <label for="size" class="font-medium">Ring size</label>
                                                 <select name="size" id="size"
-                                                    class="w-full border rounded px-4 py-2 outline-blue-600">
-                                                    <option value="0" class="text-gray-500">Select size</option>
+                                                    class="w-full form-select border border-gray-200 rounded px-4 py-2 cursor-pointer outline-blue-600">
+                                                    <option value="0">Select size</option>
                                                     <option value="lg">LG</option>
                                                     <option value="xl">XL</option>
                                                     <option value="2xl">2XL</option>
@@ -152,9 +153,9 @@
                                             </div>
 
                                             <!-- quantity -->
-                                            <div class=" space-y-2">
+                                            <div class="w-24 space-y-2">
                                                 <label for="quantity" class="font-medium">Quantity</label>
-                                                <div class="w-full max-w-[104px] relative border  rounded">
+                                                <div class="w-full relative border  rounded">
                                                     <input type="number" value="1" name="quantity" id="quantity"
                                                         class="w-full rounded py-2 px-8 text-center text-black font-medium outline-blue-600">
 
@@ -187,16 +188,18 @@
                                             <fieldset class="space-y-4">
                                                 <legend class="font-medium">Would you like to add a center stone?
                                                 </legend>
-                                                <div class="flex items-center gap-4">
+                                                <div class="flex items-center gap-8 px-1">
                                                     <div class="flex items-center gap-2">
                                                         <input type="radio" name="stone" id="yes" checked
-                                                            class="w-4 h-4 accent-blue-600">
-                                                        <label for="yes" class="text-sm font-medium ">Yes</label>
+                                                            class="w-4 h-4 cursor-pointer accent-blue-600">
+                                                        <label for="yes"
+                                                            class="text-sm font-medium cursor-pointer">Yes</label>
                                                     </div>
                                                     <div class="flex items-center gap-2">
                                                         <input type="radio" name="stone" id="no"
-                                                            class="w-4 h-4 accent-blue-600">
-                                                        <label for="no" class="text-sm font-medium ">No</label>
+                                                            class="w-4 h-4 cursor-pointer accent-blue-600">
+                                                        <label for="no"
+                                                            class="text-sm font-medium cursor-pointer">No</label>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -218,13 +221,13 @@
                                             <p class="text-sm text-gray-500">Enjoy peace of mind with a Care Plan from
                                                 Jweller's Mutual.</p>
                                             <div
-                                                class="md:grid lg:block xl:grid grid-cols-3 max-w-xs md:max-w-xl lg:max-w-xs xl:max-w-xl border divide-y md:divide-y-0 md:divide-x lg:divide-y lg:divide-x-0 xl:divide-y-0 xl:divide-x">
+                                                class="md:grid lg:block xl:grid grid-cols-3 max-w-xs md:max-w-[33.5rem] lg:max-w-xs xl:max-w-[33.5rem] border divide-y md:divide-y-0 md:divide-x lg:divide-y lg:divide-x-0 xl:divide-y-0 xl:divide-x">
 
                                                 <!-- No Plan -->
                                                 <input type="radio" name="plan" id="noPlan" checked
                                                     class="hidden peer/noPlan">
                                                 <label for="noPlan"
-                                                    class=" px-4 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/noPlan:text-white peer-checked/noPlan:bg-blue-600">
+                                                    class="px-2 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/noPlan:text-white peer-checked/noPlan:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
                                                     <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
@@ -238,7 +241,7 @@
                                                 <!-- 3 Years Plan -->
                                                 <input type="radio" name="plan" id="3Y" class="hidden peer/3Y">
                                                 <label for="3Y"
-                                                    class=" px-4 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/3Y:text-white peer-checked/3Y:bg-blue-600">
+                                                    class="px-2 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/3Y:text-white peer-checked/3Y:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
                                                     <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
@@ -254,7 +257,7 @@
                                                 <input type="radio" name="plan" id="lifetime"
                                                     class="hidden peer/lifetime">
                                                 <label for="lifetime"
-                                                    class=" px-4 py-2 group flex items-center justify-center gap-2 cursor-pointer  peer-checked/lifetime:text-white peer-checked/lifetime:bg-blue-600">
+                                                    class="px-2 py-2 group flex items-center justify-center gap-2 cursor-pointer  peer-checked/lifetime:text-white peer-checked/lifetime:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
                                                     <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
@@ -279,7 +282,7 @@
                                                     <line x1="12" y1="5" x2="12" y2="19"></line>
                                                     <line x1="5" y1="12" x2="19" y2="12"></line>
                                                 </svg>
-                                                Add Engraving <span class="font-medium">$30.00</span>
+                                                Add Engraving <strong class="font-medium">$30.00</strong>
                                             </button>
                                         </div>
                                     </div>
@@ -383,7 +386,7 @@
                                             <h4 class="font-medium flex flex-wrap justify-between items-center">
                                                 Complimentary
                                                 Appraisal
-                                                <span class="text-black">$00.00</span>
+                                                <strong class="text-black font-semibold">$00.00</strong>
                                             </h4>
                                             <dl class="text-sm text-gray-500">
                                                 <div class="flex flex-wrap items-center gap-1">
@@ -415,7 +418,7 @@
                                             <h4 class="font-medium flex flex-wrap justify-between items-center">
                                                 Complimentary
                                                 Appraisal
-                                                <span class="text-black">$00.00</span>
+                                                <strong class="text-black font-semibold">$00.00</strong>
                                             </h4>
                                             <dl class="text-sm text-gray-500">
                                                 <div class="flex flex-wrap items-center gap-1">
@@ -436,7 +439,6 @@
                                         </button>
                                     </article>
                                 </li>
-
                             </ul>
                         </section>
                     </li>
@@ -446,13 +448,14 @@
                             <!-- main product -->
                             <div class="flex flex-col lg:flex-row gap-8">
                                 <!-- product image -->
-                                <div class="flex-none mx-auto h-full lg:max-w-[50%] xl:max-w-lg">
+                                <div class="flex-none mx-auto h-full lg:max-w-lg">
                                     <img src="./images/image%2032.png" alt="Ring"
                                         class="w-full h-full object-cover lg:object-contain xl:object-cover rounded-md">
                                 </div>
 
                                 <!-- product details -->
-                                <div class="flex-1 space-y-4 overflow-x-hidden">
+                                <div
+                                    class="flex-1 space-y-4 lg:max-h-[520px] lg:overflow-y-auto xl:max-h-none overflow-x-hidden">
                                     <!-- product name, price and id -->
                                     <header class="space-y-1">
                                         <!-- product name -->
@@ -487,19 +490,19 @@
                                             </div>
                                         </dl>
                                         <!-- product price -->
-                                        <div class="text-2xl font-bold text-black">$1,258.78</div>
+                                        <strong class="text-2xl font-semibold text-black">$1,258.78</strong>
                                     </header>
 
                                     <!-- product details -->
                                     <div class="space-y-4">
                                         <!-- Size, Quantity and Stone -->
-                                        <div class="flex flex-wrap gap-x-10 gap-y-3">
+                                        <div class="flex flex-wrap gap-x-12 gap-y-3">
                                             <!-- Ring size -->
-                                            <div class=" space-y-2">
+                                            <div class="w-60 pl-px space-y-2">
                                                 <label for="size2" class="font-medium">Ring size</label>
                                                 <select name="size2" id="size2"
-                                                    class="w-full border rounded px-4 py-2 outline-blue-600">
-                                                    <option value="0" class="text-gray-500">Select size</option>
+                                                    class="w-full form-select border border-gray-200 rounded px-4 py-2 cursor-pointer outline-blue-600">
+                                                    <option value="0">Select size</option>
                                                     <option value="lg">LG</option>
                                                     <option value="xl">XL</option>
                                                     <option value="2xl">2XL</option>
@@ -508,9 +511,9 @@
                                             </div>
 
                                             <!-- quantity -->
-                                            <div class=" space-y-2">
+                                            <div class="w-24 space-y-2">
                                                 <label for="quantity2" class="font-medium">Quantity</label>
-                                                <div class="w-full max-w-[104px] relative border  rounded">
+                                                <div class="w-full relative border  rounded">
                                                     <input type="number" value="1" name="quantity2" id="quantity2"
                                                         class="w-full rounded py-2 px-8 text-center text-black font-medium outline-blue-600">
 
@@ -543,16 +546,18 @@
                                             <fieldset class="space-y-4">
                                                 <legend class="font-medium">Would you like to add a center stone?
                                                 </legend>
-                                                <div class="flex items-center gap-4">
+                                                <div class="flex items-center gap-8 px-1">
                                                     <div class="flex items-center gap-2">
                                                         <input type="radio" name="stone2" id="yes2" checked
-                                                            class="w-4 h-4 accent-blue-600">
-                                                        <label for="yes2" class="text-sm font-medium ">Yes</label>
+                                                            class="w-4 h-4 cursor-pointer accent-blue-600">
+                                                        <label for="yes2"
+                                                            class="text-sm font-medium cursor-pointer">Yes</label>
                                                     </div>
                                                     <div class="flex items-center gap-2">
                                                         <input type="radio" name="stone2" id="no2"
-                                                            class="w-4 h-4 accent-blue-600">
-                                                        <label for="no2" class="text-sm font-medium ">No</label>
+                                                            class="w-4 h-4 cursor-pointer accent-blue-600">
+                                                        <label for="no2"
+                                                            class="text-sm font-medium cursor-pointer">No</label>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -574,13 +579,13 @@
                                             <p class="text-sm text-gray-500">Enjoy peace of mind with a Care Plan from
                                                 Jweller's Mutual.</p>
                                             <div
-                                                class="md:grid lg:block xl:grid grid-cols-3 max-w-xs md:max-w-xl lg:max-w-xs xl:max-w-xl border divide-y md:divide-y-0 md:divide-x lg:divide-y lg:divide-x-0 xl:divide-y-0 xl:divide-x">
+                                                class="md:grid lg:block xl:grid grid-cols-3 max-w-xs md:max-w-[33.5rem] lg:max-w-xs xl:max-w-[33.5rem] border divide-y md:divide-y-0 md:divide-x lg:divide-y lg:divide-x-0 xl:divide-y-0 xl:divide-x">
 
                                                 <!-- No Plan -->
                                                 <input type="radio" name="plan2" id="noPlan2" checked
                                                     class="hidden peer/noPlan2">
                                                 <label for="noPlan2"
-                                                    class=" px-4 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/noPlan2:text-white peer-checked/noPlan2:bg-blue-600">
+                                                    class="px-2 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/noPlan2:text-white peer-checked/noPlan2:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
                                                     <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
@@ -594,7 +599,7 @@
                                                 <!-- 3 Years Plan -->
                                                 <input type="radio" name="plan2" id="3Y2" class="hidden peer/3Y2">
                                                 <label for="3Y2"
-                                                    class=" px-4 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/3Y2:text-white peer-checked/3Y2:bg-blue-600">
+                                                    class="px-2 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/3Y2:text-white peer-checked/3Y2:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
                                                     <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
@@ -610,7 +615,7 @@
                                                 <input type="radio" name="plan2" id="lifetime2"
                                                     class="hidden peer/lifetime2">
                                                 <label for="lifetime2"
-                                                    class=" px-4 py-2 group flex items-center justify-center gap-2 cursor-pointer  peer-checked/lifetime2:text-white peer-checked/lifetime2:bg-blue-600">
+                                                    class="px-2 py-2 group flex items-center justify-center gap-2 cursor-pointer  peer-checked/lifetime2:text-white peer-checked/lifetime2:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
                                                     <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
@@ -744,7 +749,7 @@
                                             <h4 class="font-medium flex flex-wrap justify-between items-center">
                                                 Complimentary
                                                 Appraisal
-                                                <span class="text-black">$00.00</span>
+                                                <strong class="text-black font-semibold">$00.00</strong>
                                             </h4>
                                             <dl class="text-sm text-gray-500">
                                                 <div class="flex flex-wrap items-center gap-1">
@@ -776,7 +781,7 @@
                                             <h4 class="font-medium flex flex-wrap justify-between items-center">
                                                 Complimentary
                                                 Appraisal
-                                                <span class="text-black">$00.00</span>
+                                                <strong class="text-black font-semibold">$00.00</strong>
                                             </h4>
                                             <dl class="text-sm text-gray-500">
                                                 <div class="flex flex-wrap items-center gap-1">
@@ -808,7 +813,7 @@
                                             <h4 class="font-medium flex flex-wrap justify-between items-center">
                                                 Complimentary
                                                 Appraisal
-                                                <span class="text-black">$425.00</span>
+                                                <strong class="text-black font-semibold">$425.00</strong>
                                             </h4>
                                             <dl class="text-sm text-gray-500">
                                                 <div class="flex flex-wrap items-center gap-1">
@@ -829,7 +834,6 @@
                                         </button>
                                     </article>
                                 </li>
-
                             </ul>
                         </section>
                     </li>
@@ -839,12 +843,15 @@
                     class="grid grid-cols-1 md:grid-cols-2 gap-20 p-4 border border-gray-500 rounded-md container mx-auto">
                     <!-- shipping data -->
                     <div class="space-y-4">
+                        <!-- Special Instructions -->
                         <div class="space-y-2">
                             <label for="specialInstructions" class="font-semibold text-lg text-black">Special
                                 Instructions</label>
-                            <textarea name="specialInstructions" id="specialInstructions" rows="5"
-                                class="w-full border rounded-md px-4 py-2 resize-none font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, et! Consectetur maxime, quod omnis sit rerum vero illum fugit incidunt accusamus voluptate quae animi voluptates ad vitae, commodi eaque aperiam eius impedit sint iste neque, officiis sunt. Consequuntur illo doloribus enim possimus, eveniet tempora a!</textarea>
+                            <textarea name="specialInstructions" id="specialInstructions" spellcheck="false" rows="5"
+                                class="w-full border rounded-md px-4 py-2 resize-none font-medium outline-blue-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, et! Consectetur maxime, quod omnis sit rerum vero illum fugit incidunt accusamus voluptate quae animi voluptates ad vitae, commodi eaque aperiam eius impedit sint iste neque, officiis sunt. Consequuntur illo doloribus enim possimus, eveniet tempora a!</textarea>
                         </div>
+
+                        <!-- Shipping data -->
                         <div class="space-y-3 pb-6">
                             <h2 class="font-semibold text-lg text-black">Shipping</h2>
                             <dl class="flex flex-col sm:flex-row gap-4 justify-between max-w-[39rem]">
@@ -859,6 +866,8 @@
                                 </div>
                             </dl>
                         </div>
+
+                        <!-- Phone orders -->
                         <div class="border bg-gray-50 space-y-4 rounded-md px-4 py-3 text-sm">
                             <address class="not-italic">For sunday delivery, call customer service at <a
                                     href="tel:+654654154154" class="text-black font-medium">654654154154</a>
@@ -869,7 +878,7 @@
                                         Expedite Options</a> </p>
                                 <dl class="flex flex-wrap items-center gap-1">
                                     <dt>For phone orders please mention&colon;</dt>
-                                    <dd class="text-black font-medium">QDHJIV4</dd>
+                                    <dd class="text-black"><strong class="font-medium">QDHJIV4</strong></dd>
                                 </dl>
                             </div>
                         </div>
@@ -881,15 +890,15 @@
                         <dl class=" divide-y-2 ">
                             <div class="flex items-center justify-between py-4">
                                 <dt class="font-medium">Subtotal</dt>
-                                <dd class="text-black text-lg font-medium">$5,364.75</dd>
+                                <dd class="text-black text-xl"><strong class="font-semibold">$5,364.75</strong></dd>
                             </div>
                             <div class="flex items-center justify-between py-4">
                                 <dt class="font-medium">Shipping</dt>
-                                <dd class="text-black text-lg font-medium">Free</dd>
+                                <dd class="text-black text-xl"><strong class="font-semibold">Free</strong></dd>
                             </div>
                             <div class="flex items-center justify-between py-4">
                                 <dt class="font-medium">Total payable</dt>
-                                <dd class="text-black text-lg font-medium">$5,364.75</dd>
+                                <dd class="text-black text-xl"><strong class="font-semibold">$5,364.75</strong></dd>
                             </div>
                         </dl>
 
