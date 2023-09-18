@@ -1073,6 +1073,10 @@ input[type="radio"]:checked+label svg {
   height: 6rem;
 }
 
+.h-28{
+  height: 7rem;
+}
+
 .h-4{
   height: 1rem;
 }
@@ -1122,6 +1126,10 @@ input[type="radio"]:checked+label svg {
   width: 6rem;
 }
 
+.w-28{
+  width: 7rem;
+}
+
 .w-4{
   width: 1rem;
 }
@@ -1132,6 +1140,10 @@ input[type="radio"]:checked+label svg {
 
 .w-6{
   width: 1.5rem;
+}
+
+.w-60{
+  width: 15rem;
 }
 
 .w-7{
@@ -1150,16 +1162,8 @@ input[type="radio"]:checked+label svg {
   width: 100%;
 }
 
-.w-60{
-  width: 15rem;
-}
-
 .max-w-4xl{
   max-width: 56rem;
-}
-
-.max-w-\[104px\]{
-  max-width: 104px;
 }
 
 .max-w-\[240px\]{
@@ -1184,18 +1188,6 @@ input[type="radio"]:checked+label svg {
 
 .max-w-xs{
   max-width: 20rem;
-}
-
-.max-w-3xl{
-  max-width: 48rem;
-}
-
-.max-w-2xl{
-  max-width: 42rem;
-}
-
-.max-w-\[220px\]{
-  max-width: 220px;
 }
 
 .flex-1{
@@ -1912,9 +1904,9 @@ input[type="radio"]:checked+label svg {
   gap: 2rem;
 }
 
-.gap-x-10{
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
+.gap-x-12{
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 
 .gap-x-5{
@@ -1932,11 +1924,6 @@ input[type="radio"]:checked+label svg {
 
 .gap-y-6{
   row-gap: 1.5rem;
-}
-
-.gap-x-12{
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -2689,6 +2676,11 @@ input[type="radio"]:checked+label svg {
   padding-right: 0.125rem;
 }
 
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -2759,21 +2751,16 @@ input[type="radio"]:checked+label svg {
   padding-bottom: 2rem;
 }
 
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .pb-6{
   padding-bottom: 1.5rem;
 }
 
-.pr-20{
-  padding-right: 5rem;
-}
-
 .pl-px{
   padding-left: 1px;
+}
+
+.pr-20{
+  padding-right: 5rem;
 }
 
 .text-left{
@@ -3248,10 +3235,6 @@ input[type="radio"]:checked+label svg {
   outline-style: double;
 }
 
-.outline-offset-2{
-  outline-offset: 2px;
-}
-
 .outline-black{
   outline-color: #000;
 }
@@ -3268,10 +3251,6 @@ input[type="radio"]:checked+label svg {
 
 .ring-inset{
   --tw-ring-inset: inset;
-}
-
-.ring-offset-2{
-  --tw-ring-offset-width: 2px;
 }
 
 .blur{
@@ -3690,10 +3669,6 @@ input[type="radio"]:checked+label svg {
     max-width: 56rem;
   }
 
-  .md\:max-w-xl{
-    max-width: 36rem;
-  }
-
   .md\:max-w-\[33\.5rem\]{
     max-width: 33.5rem;
   }
@@ -3777,14 +3752,6 @@ input[type="radio"]:checked+label svg {
 
   .xl\:max-h-none{
     max-height: none;
-  }
-
-  .xl\:max-w-xl{
-    max-width: 36rem;
-  }
-
-  .xl\:max-w-2xl{
-    max-width: 42rem;
   }
 
   .xl\:max-w-\[33\.5rem\]{
