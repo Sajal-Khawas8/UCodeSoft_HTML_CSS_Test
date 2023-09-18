@@ -2299,6 +2299,10 @@ input[type="radio"]:checked+label svg {
   border-radius: 0.375rem;
 }
 
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2536,8 +2540,8 @@ input[type="radio"]:checked+label svg {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-gray-300{
-  --tw-gradient-to: #d1d5db var(--tw-gradient-to-position);
+.to-gray-200{
+  --tw-gradient-to: #e5e7eb var(--tw-gradient-to-position);
 }
 
 .decoration-slice{
@@ -2681,9 +2685,9 @@ input[type="radio"]:checked+label svg {
   padding-right: 0.25rem;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-16{
@@ -3773,5 +3777,10 @@ input[type="radio"]:checked+label svg {
   .xl\:object-cover{
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .xl\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
