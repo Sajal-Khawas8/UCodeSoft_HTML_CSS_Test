@@ -81,12 +81,12 @@
     <main class="space-y-12 py-8">
         <!-- main form -->
         <div>
-            <form action="#" class="px-6 space-y-12">
+            <form action="#" class="sm:px-6 space-y-12">
                 <!-- products -->
                 <ul class="space-y-12">
                     <!-- first product -->
                     <li>
-                        <section class="space-y-6 p-6 border border-gray-500 rounded-md shadow container mx-auto">
+                        <section class="space-y-6 p-6 border border-gray-500 sm:rounded-md shadow container mx-auto">
                             <!-- main product -->
                             <div class="flex flex-col lg:flex-row gap-8">
                                 <!-- product image -->
@@ -115,13 +115,14 @@
                                             <!-- Remove button -->
                                             <button type="button" aria-label="Remove Item"
                                                 class="flex items-center h-fit gap-1">
-                                                <svg class="w-5 h-5 text-gray-600" fill="currentColor"
+                                                <svg class="flex-none w-5 h-5 text-gray-600" fill="currentColor"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
                                                     </path>
                                                 </svg>
-                                                <span class="text-base text-gray-500 font-normal">Remove</span>
+                                                <span
+                                                    class="hidden sm:inline text-base text-gray-500 font-normal">Remove</span>
                                             </button>
                                         </h2>
                                         <!-- product id -->
@@ -138,49 +139,51 @@
                                     <!-- product details -->
                                     <div class="space-y-4">
                                         <!-- Size, Quantity and Stone -->
-                                        <div class="flex flex-wrap gap-x-12 gap-y-3">
-                                            <!-- Ring size -->
-                                            <div class="w-60 pl-px space-y-2">
-                                                <label for="size" class="font-medium">Ring size</label>
-                                                <select name="size" id="size"
-                                                    class="w-full form-select border border-gray-200 rounded px-4 py-2 cursor-pointer outline-blue-600">
-                                                    <option value="0">Select size</option>
-                                                    <option value="lg">LG</option>
-                                                    <option value="xl">XL</option>
-                                                    <option value="2xl">2XL</option>
-                                                    <option value="3xl">3XL</option>
-                                                </select>
-                                            </div>
+                                        <div class="flex flex-wrap gap-x-7 lg:gap-x-12 gap-y-3">
+                                            <div class="grid grid-cols-2 gap-x-5 sm:flex md:gap-x-7 lg:gap-x-12">
+                                                <!-- Ring size -->
+                                                <div class="sm:w-60 pl-px space-y-2">
+                                                    <label for="size" class="font-medium">Ring size</label>
+                                                    <select name="size" id="size"
+                                                        class="w-full form-select border border-gray-200 rounded px-4 py-2 cursor-pointer outline-blue-600">
+                                                        <option value="0">Select size</option>
+                                                        <option value="lg">LG</option>
+                                                        <option value="xl">XL</option>
+                                                        <option value="2xl">2XL</option>
+                                                        <option value="3xl">3XL</option>
+                                                    </select>
+                                                </div>
 
-                                            <!-- quantity -->
-                                            <div class="w-24 space-y-2">
-                                                <label for="quantity" class="font-medium">Quantity</label>
-                                                <div class="w-full relative border  rounded">
-                                                    <input type="number" value="1" name="quantity" id="quantity"
-                                                        class="w-full rounded py-2 px-8 text-center text-black font-medium outline-blue-600">
+                                                <!-- quantity -->
+                                                <div class="sm:w-24 space-y-2">
+                                                    <label for="quantity" class="font-medium">Quantity</label>
+                                                    <div class="w-full relative border  rounded">
+                                                        <input type="number" value="1" name="quantity" id="quantity"
+                                                            class="w-full rounded py-2 px-8 text-center text-black font-medium outline-blue-600">
 
-                                                    <!-- subtract button -->
-                                                    <button type="button" aria-label="Remove 1"
-                                                        class="absolute left-1 top-1/2 -translate-y-1/2">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
-                                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                                                            stroke="currentColor" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                        </svg>
-                                                    </button>
+                                                        <!-- subtract button -->
+                                                        <button type="button" aria-label="Remove 1"
+                                                            class="absolute left-1 top-1/2 -translate-y-1/2">
+                                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+                                                                width="24" height="24" viewBox="0 0 24 24"
+                                                                stroke-width="2" stroke="currentColor" fill="none"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                            </svg>
+                                                        </button>
 
-                                                    <!-- Add button -->
-                                                    <button type="button" aria-label="Add 1"
-                                                        class="absolute right-1 top-1/2 -translate-y-1/2">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
-                                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                            stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round">
-                                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                        </svg>
-                                                    </button>
+                                                        <!-- Add button -->
+                                                        <button type="button" aria-label="Add 1"
+                                                            class="absolute right-1 top-1/2 -translate-y-1/2">
+                                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+                                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -211,8 +214,9 @@
                                                 Protection
                                                 Plans
                                                 <!-- info icon -->
-                                                <svg class="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 1024 1024" fill="currentColor">
+                                                <svg class="flex-none w-5 h-5 text-blue-600"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"
+                                                    fill="currentColor">
                                                     <path
                                                         d="M576 736l-32-.001v-286c0-.336-.096-.656-.096-1.008s.096-.655.096-.991c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32s14.336 32 32 32h32v256h-32c-17.664 0-32 14.336-32 32s14.336 32 32 32h128c17.664 0 32-14.336 32-32s-14.336-32-32-32zm-64-384.001c35.344 0 64-28.656 64-64s-28.656-64-64-64-64 28.656-64 64 28.656 64 64 64zm0-352c-282.768 0-512 229.232-512 512 0 282.784 229.232 512 512 512 282.784 0 512-229.216 512-512 0-282.768-229.216-512-512-512zm0 961.008c-247.024 0-448-201.984-448-449.01 0-247.024 200.976-448 448-448s448 200.977 448 448-200.976 449.01-448 449.01z">
                                                     </path>
@@ -221,15 +225,15 @@
                                             <p class="text-sm text-gray-500">Enjoy peace of mind with a Care Plan from
                                                 Jweller's Mutual.</p>
                                             <div
-                                                class="md:grid lg:block xl:grid grid-cols-3 max-w-xs md:max-w-[33.5rem] lg:max-w-xs xl:max-w-[33.5rem] border divide-y md:divide-y-0 md:divide-x lg:divide-y lg:divide-x-0 xl:divide-y-0 xl:divide-x">
+                                                class="md:grid lg:block xl:grid grid-cols-3 max-w-none sm:max-w-xs md:max-w-[33.5rem] lg:max-w-xs xl:max-w-[33.5rem] border divide-y md:divide-y-0 md:divide-x lg:divide-y lg:divide-x-0 xl:divide-y-0 xl:divide-x">
 
                                                 <!-- No Plan -->
-                                                <input type="radio" name="plan" id="noPlan" checked
+                                                <input type="radio" name="plan" id="noPlan" value="No Plan" checked
                                                     class="hidden peer/noPlan">
                                                 <label for="noPlan"
                                                     class="px-2 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/noPlan:text-white peer-checked/noPlan:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
-                                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
+                                                    <svg class="flex-none w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
                                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                                             d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
@@ -239,11 +243,11 @@
                                                 </label>
 
                                                 <!-- 3 Years Plan -->
-                                                <input type="radio" name="plan" id="3Y" class="hidden peer/3Y">
+                                                <input type="radio" name="plan" id="3Y" value="3 Years" class="hidden peer/3Y">
                                                 <label for="3Y"
                                                     class="px-2 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/3Y:text-white peer-checked/3Y:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
-                                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
+                                                    <svg class="flex-none w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
                                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                                             d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
@@ -254,12 +258,12 @@
                                                 </label>
 
                                                 <!-- Lifetime Plan -->
-                                                <input type="radio" name="plan" id="lifetime"
+                                                <input type="radio" name="plan" id="lifetime" value="Lifetime"
                                                     class="hidden peer/lifetime">
                                                 <label for="lifetime"
                                                     class="px-2 py-2 group flex items-center justify-center gap-2 cursor-pointer  peer-checked/lifetime:text-white peer-checked/lifetime:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
-                                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
+                                                    <svg class="flex-none w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
                                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                                             d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
@@ -276,9 +280,10 @@
                                             <p class="font-medium">Want to add engraving?</p>
                                             <button type="button" aria-label="Add Engraving"
                                                 class="flex items-center gap-1 text-blue-600">
-                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <svg class="flex-none w-6 h-6" xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
                                                     <line x1="12" y1="5" x2="12" y2="19"></line>
                                                     <line x1="5" y1="12" x2="19" y2="12"></line>
                                                 </svg>
@@ -295,8 +300,9 @@
                                                 class="absolute inset-y-0 left-0 w-12 bg-gradient-to-l from-transparent to-gray-200">
                                                 <button type="button" aria-label="left"
                                                     class="w-9 h-9 rounded-full bg-gray-700 absolute left-1 top-1/2 -translate-y-1/2 flex items-center justify-center">
-                                                    <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 24 24" fill="currentColor">
+                                                    <svg class="flex-none w-8 h-8 text-white"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor">
                                                         <g>
                                                             <path fill="none" d="M0 0h24v24H0z"></path>
                                                             <path
@@ -310,7 +316,7 @@
                                                 class="absolute inset-y-0 right-0 w-12 bg-gradient-to-r from-transparent to-gray-200">
                                                 <button type="button" aria-label="right"
                                                     class="w-9 h-9 rounded-full bg-gray-700 absolute right-1 top-1/2 -translate-y-1/2 flex items-center justify-center">
-                                                    <svg class="w-8 h-8 text-white rotate-180"
+                                                    <svg class="flex-none w-8 h-8 text-white rotate-180"
                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                                         fill="currentColor">
                                                         <g>
@@ -398,7 +404,7 @@
                                         <button type="button"
                                             class="hidden group-hover:block absolute right-0 top-0 translate-x-1/2 -translate-y-1/2"
                                             aria-label="Remove Item">
-                                            <svg class="w-4 h-4 text-gray-600" fill="currentColor"
+                                            <svg class="flex-none w-5 h-5 text-gray-600" fill="currentColor"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                                 <path
                                                     d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
@@ -430,7 +436,7 @@
                                         <button type="button"
                                             class="hidden group-hover:block absolute right-0 top-0 translate-x-1/2 -translate-y-1/2"
                                             aria-label="Remove Item">
-                                            <svg class="w-4 h-4 text-gray-600" fill="currentColor"
+                                            <svg class="flex-none w-5 h-5 text-gray-600" fill="currentColor"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                                 <path
                                                     d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
@@ -444,7 +450,7 @@
                     </li>
                     <!-- second product -->
                     <li>
-                        <section class="space-y-6 p-6 border border-gray-500 rounded-md shadow container mx-auto">
+                        <section class="space-y-6 p-6 border border-gray-500 sm:rounded-md shadow container mx-auto">
                             <!-- main product -->
                             <div class="flex flex-col lg:flex-row gap-8">
                                 <!-- product image -->
@@ -473,13 +479,14 @@
                                             <!-- Remove button -->
                                             <button type="button" aria-label="Remove Item"
                                                 class="flex items-center h-fit gap-1">
-                                                <svg class="w-5 h-5 text-gray-600" fill="currentColor"
+                                                <svg class="flex-none w-5 h-5 text-gray-600" fill="currentColor"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
                                                     </path>
                                                 </svg>
-                                                <span class="text-base text-gray-500 font-normal">Remove</span>
+                                                <span
+                                                    class="hidden sm:inline text-base text-gray-500 font-normal">Remove</span>
                                             </button>
                                         </h2>
                                         <!-- product id -->
@@ -496,49 +503,51 @@
                                     <!-- product details -->
                                     <div class="space-y-4">
                                         <!-- Size, Quantity and Stone -->
-                                        <div class="flex flex-wrap gap-x-12 gap-y-3">
-                                            <!-- Ring size -->
-                                            <div class="w-60 pl-px space-y-2">
-                                                <label for="size2" class="font-medium">Ring size</label>
-                                                <select name="size2" id="size2"
-                                                    class="w-full form-select border border-gray-200 rounded px-4 py-2 cursor-pointer outline-blue-600">
-                                                    <option value="0">Select size</option>
-                                                    <option value="lg">LG</option>
-                                                    <option value="xl">XL</option>
-                                                    <option value="2xl">2XL</option>
-                                                    <option value="3xl">3XL</option>
-                                                </select>
-                                            </div>
+                                        <div class="flex flex-wrap gap-x-7 lg:gap-x-12 gap-y-3">
+                                            <div class="grid grid-cols-2 gap-x-5 sm:flex md:gap-x-7 lg:gap-x-12">
+                                                <!-- Ring size -->
+                                                <div class="sm:w-60 pl-px space-y-2">
+                                                    <label for="size2" class="font-medium">Ring size</label>
+                                                    <select name="size2" id="size2"
+                                                        class="w-full form-select border border-gray-200 rounded px-4 py-2 cursor-pointer outline-blue-600">
+                                                        <option value="0">Select size</option>
+                                                        <option value="lg">LG</option>
+                                                        <option value="xl">XL</option>
+                                                        <option value="2xl">2XL</option>
+                                                        <option value="3xl">3XL</option>
+                                                    </select>
+                                                </div>
 
-                                            <!-- quantity -->
-                                            <div class="w-24 space-y-2">
-                                                <label for="quantity2" class="font-medium">Quantity</label>
-                                                <div class="w-full relative border  rounded">
-                                                    <input type="number" value="1" name="quantity2" id="quantity2"
-                                                        class="w-full rounded py-2 px-8 text-center text-black font-medium outline-blue-600">
+                                                <!-- quantity -->
+                                                <div class="sm:w-24 space-y-2">
+                                                    <label for="quantity2" class="font-medium">Quantity</label>
+                                                    <div class="w-full relative border  rounded">
+                                                        <input type="number" value="1" name="quantity2" id="quantity2"
+                                                            class="w-full rounded py-2 px-8 text-center text-black font-medium outline-blue-600">
 
-                                                    <!-- subtract button -->
-                                                    <button type="button" aria-label="Remove 1"
-                                                        class="absolute left-1 top-1/2 -translate-y-1/2">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
-                                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                                                            stroke="currentColor" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                        </svg>
-                                                    </button>
+                                                        <!-- subtract button -->
+                                                        <button type="button" aria-label="Remove 1"
+                                                            class="absolute left-1 top-1/2 -translate-y-1/2">
+                                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+                                                                width="24" height="24" viewBox="0 0 24 24"
+                                                                stroke-width="2" stroke="currentColor" fill="none"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                            </svg>
+                                                        </button>
 
-                                                    <!-- Add button -->
-                                                    <button type="button" aria-label="Add 1"
-                                                        class="absolute right-1 top-1/2 -translate-y-1/2">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
-                                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                            stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round">
-                                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                        </svg>
-                                                    </button>
+                                                        <!-- Add button -->
+                                                        <button type="button" aria-label="Add 1"
+                                                            class="absolute right-1 top-1/2 -translate-y-1/2">
+                                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+                                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -579,15 +588,15 @@
                                             <p class="text-sm text-gray-500">Enjoy peace of mind with a Care Plan from
                                                 Jweller's Mutual.</p>
                                             <div
-                                                class="md:grid lg:block xl:grid grid-cols-3 max-w-xs md:max-w-[33.5rem] lg:max-w-xs xl:max-w-[33.5rem] border divide-y md:divide-y-0 md:divide-x lg:divide-y lg:divide-x-0 xl:divide-y-0 xl:divide-x">
+                                                class="md:grid lg:block xl:grid grid-cols-3 sm:max-w-xs md:max-w-[33.5rem] lg:max-w-xs xl:max-w-[33.5rem] border divide-y md:divide-y-0 md:divide-x lg:divide-y lg:divide-x-0 xl:divide-y-0 xl:divide-x">
 
                                                 <!-- No Plan -->
-                                                <input type="radio" name="plan2" id="noPlan2" checked
+                                                <input type="radio" name="plan2" id="noPlan2" value="No Plan" checked
                                                     class="hidden peer/noPlan2">
                                                 <label for="noPlan2"
                                                     class="px-2 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/noPlan2:text-white peer-checked/noPlan2:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
-                                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
+                                                    <svg class="flex-none w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
                                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                                             d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
@@ -597,11 +606,11 @@
                                                 </label>
 
                                                 <!-- 3 Years Plan -->
-                                                <input type="radio" name="plan2" id="3Y2" class="hidden peer/3Y2">
+                                                <input type="radio" name="plan2" id="3Y2" value="3 Years" class="hidden peer/3Y2">
                                                 <label for="3Y2"
                                                     class="px-2 py-2 flex items-center justify-center gap-2 cursor-pointer  peer-checked/3Y2:text-white peer-checked/3Y2:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
-                                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
+                                                    <svg class="flex-none w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
                                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                                             d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
@@ -612,12 +621,12 @@
                                                 </label>
 
                                                 <!-- Lifetime Plan -->
-                                                <input type="radio" name="plan2" id="lifetime2"
+                                                <input type="radio" name="plan2" id="lifetime2" value="Lifetime"
                                                     class="hidden peer/lifetime2">
                                                 <label for="lifetime2"
                                                     class="px-2 py-2 group flex items-center justify-center gap-2 cursor-pointer  peer-checked/lifetime2:text-white peer-checked/lifetime2:bg-blue-600">
                                                     <!-- We are not using text-white for svg because on using text-white the svg will take its space but wii not be visible. As a result the text of radio will not be positioned in the center. So we are using custom css for it -->
-                                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
+                                                    <svg class="flex-none w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 15 15" fill="currentColor">
                                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                                             d="M11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768 2.608 2.173 3.682-4.601.78.624z"
@@ -634,16 +643,19 @@
                                             <dl>
                                                 <div class="flex items-center flex-wrap gap-1">
                                                     <dt class="font-medium ">Engraving:</dt>
-                                                    <dd class="flex items-center gap-1">
-                                                        Script Lettering <strong class="font-medium">"SAJAL"</strong>
-                                                        <button type="button" aria-label="Remove">
-                                                            <svg class="w-5 h-5 text-gray-600" fill="currentColor"
-                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                                                <path
-                                                                    d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
+                                                    <dd class="flex items-center flex-wrap gap-1">
+                                                        Script Lettering <strong class="font-medium flex items-center gap-1">"SAJAL"
+                                                            <button type="button" aria-label="Remove">
+                                                                <svg class="flex-none w-5 h-5 text-gray-600"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20">
+                                                                    <path
+                                                                        d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
+                                                                    </path>
+                                                                </svg>
+                                                            </button>
+                                                        </strong>
                                                     </dd>
                                                 </div>
                                             </dl>
@@ -658,8 +670,9 @@
                                                 class="absolute inset-y-0 left-0 w-12 bg-gradient-to-l from-transparent to-gray-200">
                                                 <button type="button" aria-label="left"
                                                     class="w-9 h-9 rounded-full bg-gray-700 absolute left-1 top-1/2 -translate-y-1/2 flex items-center justify-center">
-                                                    <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 24 24" fill="currentColor">
+                                                    <svg class="flex-none w-8 h-8 text-white"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor">
                                                         <g>
                                                             <path fill="none" d="M0 0h24v24H0z"></path>
                                                             <path
@@ -673,7 +686,7 @@
                                                 class="absolute inset-y-0 right-0 w-12 bg-gradient-to-r from-transparent to-gray-200">
                                                 <button type="button" aria-label="right"
                                                     class="w-9 h-9 rounded-full bg-gray-700 absolute right-1 top-1/2 -translate-y-1/2 flex items-center justify-center">
-                                                    <svg class="w-8 h-8 text-white rotate-180"
+                                                    <svg class="flex-none w-8 h-8 text-white rotate-180"
                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                                         fill="currentColor">
                                                         <g>
@@ -761,7 +774,7 @@
                                         <button type="button"
                                             class="hidden group-hover:block absolute right-0 top-0 translate-x-1/2 -translate-y-1/2"
                                             aria-label="Remove Item">
-                                            <svg class="w-4 h-4 text-gray-600" fill="currentColor"
+                                            <svg class="flex-none w-5 h-5 text-gray-600" fill="currentColor"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                                 <path
                                                     d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
@@ -793,7 +806,7 @@
                                         <button type="button"
                                             class="hidden group-hover:block absolute right-0 top-0 translate-x-1/2 -translate-y-1/2"
                                             aria-label="Remove Item">
-                                            <svg class="w-4 h-4 text-gray-600" fill="currentColor"
+                                            <svg class="flex-none w-5 h-5 text-gray-600" fill="currentColor"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                                 <path
                                                     d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
@@ -825,7 +838,7 @@
                                         <button type="button"
                                             class="hidden group-hover:block absolute right-0 top-0 translate-x-1/2 -translate-y-1/2"
                                             aria-label="Remove Item">
-                                            <svg class="w-4 h-4 text-gray-600" fill="currentColor"
+                                            <svg class="flex-none w-5 h-5 text-gray-600" fill="currentColor"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                                 <path
                                                     d="M10 1.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8zm4.789 11.461L13.06 14.79 10 11.729l-3.061 3.06L5.21 13.06 8.272 10 5.211 6.939 6.94 5.211 10 8.271l3.061-3.061 1.729 1.729L11.728 10l3.061 3.061z">
@@ -840,7 +853,7 @@
                 </ul>
                 <!-- summary -->
                 <article
-                    class="grid grid-cols-1 md:grid-cols-2 gap-20 p-4 border border-gray-500 rounded-md container mx-auto">
+                    class="grid grid-cols-1 md:grid-cols-2 gap-20 p-4 border border-gray-500 sm:rounded-md container mx-auto">
                     <!-- shipping data -->
                     <div class="space-y-4">
                         <!-- Special Instructions -->
@@ -1091,7 +1104,7 @@
     </main>
 
     <!-- modal -->
-    <div class="flex items-center justify-center bg-gray-500/80 fixed z-50 inset-0 px-6 py-6">
+    <div class="flex items-center justify-center bg-gray-500/80 fixed z-50 inset-0 px-6 py-6 hidden">
         <article class="bg-white p-4 sm:p-8 max-w-xl space-y-4 sm:space-y-8 relative">
             <h2 class="text-gray-700 uppercase font-medium text-xl sm:text-3xl text-center">
                 Engrave
@@ -1136,7 +1149,7 @@
                 </form>
             </div>
             <button type="button" aria-label="close" class="absolute -top-3 sm:-top-6 right-1">
-                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                <svg class="flex-none w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor">
                     <path d="M20 20L4 4.00003M20 4L4.00002 20" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round"></path>
